@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     justify-content: space-between;
 }
 .menu{
-    width: 46%;
+    width: 53%;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -62,12 +62,16 @@ h1{
 
 /* -----MENÚ HAMBURGUEZA----- */
 .navbar {
-    width: 9%;
-    margin-top: 5px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
 }
 .navbar-light .navbar-toggler {
     border-color: #fff;
     font-size: 20px;
+    margin-bottom: 14px;
 }
 .navbar-toggler {
     padding: 4px;
@@ -87,6 +91,20 @@ h1{
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.navbar-nav .activoBlanco {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 12px;
+}
+.navbar-nav .activoVerde {
+    color: #29a744;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 12px;
 }
 
 /* -----SECCION UNO----- */
@@ -430,11 +448,11 @@ footer ul a{
     .menuNav {
         width: 100%;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 0;
     }
     .navbar {
-        width: 62%;
+        width: 64%;
     }
     .logo{
         width: 43%;
@@ -450,8 +468,6 @@ footer ul a{
     }
 
     .navbar-expand-lg .navbar-collapse {
-        display: flex!important;
-        flex-basis: auto;
         justify-content: flex-end;
     }
     
