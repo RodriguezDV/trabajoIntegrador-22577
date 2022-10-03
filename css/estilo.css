@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,93 +22,107 @@ h1,h2,h3,h4,h5,h6,p,a{
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
-} */
+}
 
-
-/* -----HEADER----- */
-/* .header{
+/* -----SECCION HEADER----- */
+.header{
+    width: 100%;
     background-color: #353a40;
-    align-items: center;
+}
+.menuNav{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .menu{
-    margin: 0 60px;
+    width: 46%;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logoTexto{
-    width: 25%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 h1{
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     margin: 0;
     padding: 0;
 }
 .logo{
-    width: 38%;
+    width: 45%;
     height: auto;
     cursor: pointer;
 }
-ul{
-    margin: 0;
-    padding: 0;
-}
-li a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-}
-a:hover{
-    color: #96c93e;
-}
-.navBar{
-    width: 65%;
-}
-.navBar ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-.navBar ul li .laConferencia{
-    color: #fff;
-    font-weight: bold;
-}
-.navBar ul li .tickets{
-    color: #29a744;
-    font-weight: bold;
-} */
 
+/* -----MENÚ HAMBURGUEZA----- */
+.navbar {
+    width: 9%;
+    margin-top: 5px;
+}
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+    font-size: 20px;
+}
+.navbar-toggler {
+    padding: 4px;
+}
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+.navbar-nav {
+    align-items: flex-end;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
 
 /* -----SECCION UNO----- */
-/* .seccionUno{
+
+.seccionUno{
     width:100%;
-    height:650px;
+    height: 450px;
 }
 .seccionUno .imgBsAs{
-    object-fit: cover;
     width:100%;
     height:100%;
     filter: brightness(50%);
+    object-fit: cover;
+    text-align: center;
+    top: 108px;
+    right: 0;
 }
 .textoBanner{
-    width: 50%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     position: absolute;
-    top: 400px;
-    right: 75px;
+    top: 267px;
+    right: 0;
     color: #fff;
 }
 .textoBanner h2{
     margin-bottom: 13px;
 }
 .textoBanner p{
+    width: 90%;
     margin-bottom: 13px;
     font-size: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
 }
-
 .BotonOrador{
     font-size: 16px;
     background-color: transparent;
@@ -128,35 +142,35 @@ a:hover{
     color: #fff;
     padding: 5px 8px;
     font-weight: 700;
-} */
+}
 
 /* -----SECCION DOS----- */
-
-/* .seccionDos{
+.seccionDos{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .tituloSeccionDos{
     color: #353a40;
     text-align: center;
     margin: 10px 0;
 }
-
 .tarjetas{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    flex-direction: column;
+    gap: 15px;
 }
-
+.card {
+    margin: 0 auto;
+}
 .lenguajesTarjetas{
     display: flex;
     flex-direction: row;
 }
-
 .card-title{
     font-size: 16px;
     margin: 6px 0 15px 0;
@@ -164,7 +178,6 @@ a:hover{
 .card-text{
     font-size: 12px;
 }
-
 .lenguajesTarjetas .javaScript{
     font-size: 11px;
     margin: 0 5px 0 0;
@@ -172,7 +185,6 @@ a:hover{
     padding: 1px 5px;
     border-radius: 6px;
 }
-
 .lenguajesTarjetas .react{
     font-size: 11px;
     margin: 0 5px 0 0;
@@ -181,7 +193,6 @@ a:hover{
     padding: 1px 5px;
     border-radius: 5px;
 }
-
 .lenguajesTarjetas .negocios{
     font-size: 11px;
     margin: 0 5px 0 0;
@@ -199,21 +210,20 @@ a:hover{
     padding: 1px 5px;
     border-radius: 5px;
 }
-.card{
-    margin: 0 15px;
-} */
 
 /* -----SECCION TRES----- */
-/* .seccionTres{
+
+.seccionTres{
     width: 100%;
     margin-bottom: 30px;
 }
 .seccionTres .imgHonolulu{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .imgDescripcion{
     display: flex;
+    flex-direction: column;
 }
 .bsAsOctubre{
     padding: 17px;
@@ -221,31 +231,34 @@ a:hover{
     background-color: #353a40;
 }
 .bsAsOctubre p{
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
     font-size: 15px;
 }
 .bsAsOctubre h4{
     font-weight: bold;
     color: #fff;
-    margin-bottom: 15px;
+    margin: 15px 0 15px 14px;
 }
-
 .botonSeccionTres{
     background-color: #353a40;
-    margin-top: 15px;
+    margin: 15px 0 15px 14px;
     border: 1px solid #fff;
     border-radius: 5px;
     color: #fff;
     padding: 3px 6px;
     outline: none;
-} */
+}
 
 /* -----SECCION CUATRO----- */
-/* .seccionCuatro{
+
+.seccionCuatro{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 7%;
+    margin-bottom: 366px;
 }
 .textoForm{
     text-align: center;
@@ -261,9 +274,8 @@ a:hover{
     font-size: 12px;
     
 }
-
 .formulario{
-    width: 55%;
+    width: 90%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -315,78 +327,57 @@ a:hover{
     font-size: 20px;
     background-color: #96c93e;
     color: #fff;
-} */
-
+}
 
 /* -----FOOTER----- */
-/* footer{
+footer{
     width: 100%;
-    height: 80px;
+    height: 10%;
     bottom: 0;
     margin-top: 15px;
     position: absolute;
     background-color: #1f6371;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 footer ul{
     width: 80%;
     list-style: none;
-    flex-direction: row;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 16px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 footer ul li{
-    text-decoration: none;
     text-align: center;
 }
 footer ul a{
     font-size: 15px;
     color: #fff;
     font-weight:600;
-} */
+    text-decoration: none;
+}
 
-
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
+    /* -----SECCION HEADER----- */
     .menu{
+        width: 35%;
         margin: 0 6px;
         align-items: flex-start;
     }
     .logoTexto{
-        width: 41%;
+        width: 100%;
     }
     .logoTexto h1{
-        font-size: 12px;
+        width: 100%;
+        font-size: 18px;
     }
     .logo {
-        width: 52%;
-    }
-    .navbar {
-        justify-content: flex-end;
-    }
-    .navbar-light .navbar-toggler {
-        border-color: #fff;
-        font-size: 20px;
-    }
-    .navbar-toggler {
-        padding: 4px;
-    }
-    .navbar-toggler-icon {
-        width: 1em;
-        height: 1em;
-    }
-    .navbar-nav {
-        align-items: flex-end;
-    }
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        color: #fff;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        color: rgb(255, 255, 255);
-    }
-    .navbar-light .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        width: 30%;
     }
 
     /* SECCION UNO */
@@ -397,123 +388,130 @@ footer ul a{
         padding: 10px;
     }
 
+    /* SECCION DOS */
+
+    .tarjetas {
+        width: 90%;
+        flex-direction: row;
+    }
+    /* SECCION TRES */
+
+    .bsAsOctubre h4 {
+        margin: 15px 0 15px 36px;
+    }
+    .botonSeccionTres {
+        margin: 15px 0 15px 36px;
+    }
+
     /* SECCION CUATRO */
     .seccionCuatro {
-        margin-bottom: 14%;
+        margin-bottom: 12%;
     }
 
     /* FOOTER */
+    footer{
+        height: 3%;
+    }
     footer ul {
         width: 100%;
+        flex-direction: row;
     }
     footer ul a {
         font-size: 11px;
     }
 }
 
-@media only screen and (max-width: 360px){
-    /* .menu{
-        margin: 0 6px;
-        align-items: flex-start;
+@media only screen and (min-width: 1024px){
+    .menu{
+        width: 25%;
+        margin: 0;
+        padding: 0;
     }
-    .logoTexto{
-        width: 41%;
-    }
-    .logoTexto h1{
-        font-size: 12px;
-    }
-    .logo {
-        width: 52%;
+    .menuNav {
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
     }
     .navbar {
-        justify-content: flex-end;
+        width: 62%;
     }
-    .navbar-light .navbar-toggler {
-        border-color: #fff;
+    .logo{
+        width: 43%;
+    }
+    .logoTexto{
+        width: 100%;
+    }
+    .logoTexto h1 {
         font-size: 20px;
     }
-    .navbar-toggler {
-        padding: 4px;
-    }
-    .navbar-toggler-icon {
-        width: 1em;
-        height: 1em;
-    }
-    .navbar-nav {
-        align-items: flex-end;
-    }
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        color: #fff;
-    }
     .navbar-light .navbar-nav .nav-link {
-        color: rgb(255, 255, 255);
-    }
-    .navbar-light .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-    } */
-
-    /* SECCION UNO */
-    /* .seccionUno {
-        height: 350px;
-    }
-    .textoBanner {
-        width: 100%;
-        text-align: center;
-        top: 108px;
-        right: 0;
-
-    }
-    .textoBanner p {
-        width: 90%;
         font-size: 12px;
-        font-weight: 600;
-        margin: 0 auto;
-    } */
-
-    /* SECCION DOS */
-    /* .tarjetas {
-        flex-direction: column;
-        gap: 15px;
     }
-    .card {
-        margin: 0 auto;
-    } */
 
-    /* SECCION TRES */
-    /* .imgDescripcion {
-        flex-direction: column;
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
     }
-    .seccionTres .imgHonolulu {
+    
+    /* -----SECCION UNO----- */
+    .seccionUno{
+        height:650px;
+    }
+    .textoBanner{
+        width: 50%;
+        text-align: right;
+        top: 400px;
+        margin-right: 123px;
+    }
+    .textoBanner h2{
+        margin-bottom: 13px;
+    }
+    .textoBanner p{
         width: 100%;
+        margin-bottom: 13px;
+        font-size: 17px;
     }
-    .bsAsOctubre p {
-        width: 90%;
-        text-align: justify;
-        margin: 0 auto;
-    }
-    .bsAsOctubre h4 {
-        margin: 15px 0 15px 14px;
-    }
-    .botonSeccionTres {
-        margin: 15px 0 15px 14px;
-    } */
 
-    /* SECCION CUATRO */
-    /* .seccionCuatro {
-        margin-bottom: 437px;
+    /* -----SECCION DOS----- */
+    .card{
+        margin: 0;
     }
-    .formulario {
-        width: 90%;
-    } */
 
-    /* FOOTER */
-    /* footer {
-        align-items: center;
-        height: 12%;
+    /* -----SECCION TRES----- */
+    .seccionTres .imgHonolulu{
+        width: 50%;
+        height: auto;
     }
+    .imgDescripcion{
+        flex-direction: row;
+    }
+    .bsAsOctubre p{
+        font-size: 15px;
+        margin: 15px 0 15px 16px;
+    }
+    .bsAsOctubre h4{
+        margin: 15px 0 15px 16px;
+    }
+    
+    .botonSeccionTres{
+        margin: 15px 0 15px 16px;
+    }
+
+    /* -----SECCION CUATRO----- */
+    .formulario{
+        width: 50%;
+    }
+    .seccionCuatro {
+        margin-bottom: 6%;
+    }
+
+    /* -----FOOTER----- */
     footer ul {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    } */
+        width: 78%;
+    }
+    footer ul a {
+        font-size: 12px;
+    }
 }
